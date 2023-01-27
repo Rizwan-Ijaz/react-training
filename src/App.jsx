@@ -2,11 +2,21 @@ import Header from "./Components/Header";
 import { Footer } from "./Components/Footer";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
+import Profile from "./Components/Profile";
+
+const USER_PROFILE = {
+  profileImage: '',
+  name: "ABC",
+  email: "example@demo.com",
+  age: 20,
+};
 
 function App() {
+  const title = "Header Component Title";
+
   return (
     <div className="App">
-      <Header />
+      <Header title={title} />
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
@@ -24,6 +34,12 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+
+      <Profile
+        name={USER_PROFILE.name}
+        email={USER_PROFILE.email}
+        age={USER_PROFILE.age}
+      />
 
       <Footer />
     </div>

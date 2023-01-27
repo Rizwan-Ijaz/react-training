@@ -1,11 +1,11 @@
 import React from "react";
 import { Logo } from "./Logo";
 
-function Header() {
+function Header({ title }) {
   return (
     <div style={{ display: "flex" }}>
       <Logo />
-      <h1>Header Component</h1>
+      <h1>{title}</h1>
     </div>
   );
 }
