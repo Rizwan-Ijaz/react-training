@@ -1,13 +1,20 @@
-import React from "react";
-import { Logo } from "./Logo";
+import React from 'react';
+import Photo from '../assets/junaid.png';
+import CvIntro from './CvIntro';
+import ProfilePhoto from './ProfilePhoto';
 
 function Header() {
   return (
-    <div style={{ display: "flex" }}>
-      <Logo />
-      <h1>Header Component</h1>
+    <div className="cvheader">
+      <div className='cvimage'>
+        <ProfilePhoto /></div>
+      <CvIntro /> 
     </div>
-  );
+
+
+
+
+  )
 }
 
 export default Header;
