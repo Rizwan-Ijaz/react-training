@@ -3,12 +3,19 @@ import { Footer } from "./Components/Footer";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
 import Profile from "./Components/Profile";
+import Degree from "./Components/Degree";
 
 const USER_PROFILE = {
   profileImage: '',
   name: "ABC",
   email: "example@demo.com",
   age: 20,
+};
+const USER_DEGREE = {
+  degreetitle: 'Bs in Software Engineering',
+  degreetotalcgpa: '4',
+  degreeyourcgpa: '2.49',
+  degreecompletionyear: '2019',
 };
 
 function App() {
@@ -39,6 +46,10 @@ function App() {
         name={USER_PROFILE.name}
         email={USER_PROFILE.email}
         age={USER_PROFILE.age}
+      />
+
+      <Degree
+      degreetitle={USER_DEGREE.degreetitle}
       />
 
       <Footer />
