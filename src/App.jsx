@@ -3,9 +3,10 @@ import { Footer } from "./Components/Footer";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
 import Profile from "./Components/Profile";
+import Input from "./Components/Input";
 
 const USER_PROFILE = {
-  profileImage: '',
+  profileImage: "",
   name: "ABC",
   email: "example@demo.com",
   age: 20,
@@ -17,6 +18,9 @@ function App() {
   return (
     <div className="App">
       <Header title={title} />
+
+      <Input />
+
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
