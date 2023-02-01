@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-let a = 0;
 
 export default function Input() {
   const [value1, setValue1] = useState(0);
@@ -8,7 +7,7 @@ export default function Input() {
 
   const handleChangeInput1 = (e) => {
     setValue1(Number(e.target.value));
-    a = Number(e.target.value);
+   
   };
 
   const handleChangeInput2 = (e) => {
@@ -37,17 +36,10 @@ export default function Input() {
         onChange={handleChangeInput2}
       />
       <button onClick={handleSumClick}>Sum</button>
-      <button
-        onClick={() => {
-          a = 10;
-          console.log({ a });
-        }}
-      >
-        update value of A
-      </button>
+   
       <br />
       <h4>Result: {result}</h4>
-      <h4>A: {a}</h4>
+     
     </>
   );
 }

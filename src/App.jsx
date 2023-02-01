@@ -3,6 +3,8 @@ import { Footer } from "./Components/Footer";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
 import Profile from "./Components/Profile";
+import Input from "./Components/Input";
+import Degree from "./Components/Degree";
 
 const USER_PROFILE = {
   profileImage: "",
